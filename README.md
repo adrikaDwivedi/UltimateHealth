@@ -21,23 +21,107 @@ I'm thrilled to be a part of this amazing team and excited to work together to m
 
 ## Getting Started:
 
-Follow these steps to get started with UltimateHealth:
+
+### Project Requirements:
+
+* Java Installed on your machine. (**Java version:**  17)
+* Android Studio installed on your machine.
+   
+###  Install JDK:
+
+To ensure that your project runs smoothly, make sure you have Java 17 installed on your system. You can follow these steps to set up Java 17:
+
+* Visit the Oracle website or the OpenJDK website to download the Java 17 JDK (Java Development Kit) for your operating system.
+* Follow the installation instructions provided for your specific operating system.
+
+### Installing JDK 17 on macOS:
+
+* Visit the Oracle JDK download page or the AdoptOpenJDK website.
+* Download the JDK 17 installer for macOS (e.g., .dmg or .pkg file).
+* Open the downloaded installer and follow the installation instructions.
+* After the installation is complete, you can verify the installation by opening a Terminal window and running the command java -version. It should display the installed JDK version.
+
+### Setting JAVA_HOME on macOS:
+
+* Open a Terminal window.
+* Determine the installation path of JDK 17. You can use the java_home command to find the path by running /usr/libexec/java_home -v 17.
+* Copy the JDK installation path.
+* Create or edit the .zshrc file in your user home directory by running nano ~/.zshrc in the Terminal.
+* Add the following line to the file, replacing <JDK_PATH> with the copied JDK installation path:
+
+  **export JAVA_HOME=<JDK_PATH>**
+* Save the file and exit the text editor.
+* Close the Terminal window and open a new one to apply the changes.
+* To verify that JAVA_HOME is set correctly, run the command echo $JAVA_HOME in the Terminal. It should display the JDK installation path.
+
+
+### Installing JDK 17 on Windows:
+
+* Visit the Oracle JDK download page or the AdoptOpenJDK website.
+* Download the JDK 17 installer for Windows (e.g., .exe file).
+* Run the downloaded installer and follow the installation instructions.
+* After the installation is complete, you can verify the installation by opening a Command Prompt window and running the command java -version. It should display the installed JDK version.
+
+
+### Setting JAVA_HOME on Windows:
+
+* Right-click on the Windows Start button and select "System".
+* In the System window, click on "Advanced System Settings" on the left sidebar.
+* Click the "Environment Variables" button.
+* Under the "System Variables" section, click "New".
+* Enter **JAVA_HOME** as the Variable name.
+* Enter the path to the JDK 17 installation directory (e.g., C:\Program Files\Java\jdk-17) as the Variable value.
+* Click "OK" to save the variable.
+* Click "OK" again to close the Environment Variables window.
+* Close and reopen any Command Prompt windows for the changes to take effect.
+* To verify that **JAVA_HOME** is set correctly, run the command echo %JAVA_HOME% in a Command Prompt window. It should display the JDK installation path.
+
+### Setting ANDROID_HOME Environment Variable:
+
+To set the **ANDROID_HOME** variable for both Windows and macOS, you can follow the instructions below:
+
+### Windows:
+
+* Open the System Properties window by right-clicking on the Computer icon and selecting "Properties".
+* Click on "Advanced system settings" on the left-hand side.
+* In the System Properties window, click on the "Environment Variables" button.
+* In the Environment Variables window, under the "System variables" section, click on the "New" button.
+* Enter **ANDROID_HOME** as the variable name.
+* Enter the path to the Android SDK directory as the variable value. (Default Path: ` C:\Users\User_Name\AppData\Local\Android\Sdk `)
+* Click "OK" to save the changes.
+
+### macOS:
+
+* Open a terminal window.
+* Open the .bash_profile file in a text editor by running the command nano `~/.bash_profile.`
+* Add the following line to the file:
+* export ANDROID_HOME=/path/to/android/sdk
+* Replace /path/to/android/sdk with the actual path to the Android SDK directory.
+* Press Control + O to save the file, then press Enter to confirm the file name, and finally press Control + X to exit the text editor.
+* Close the terminal window and reopen it for the changes to take effect.
+
+Please note that the exact path to the Android SDK directory may vary depending on how you installed it. Make sure to replace **/path/to/android/sdk** with the correct path on your system.
+
+
+### Follow these steps to get started with UltimateHealth:
 
 **Clone the repository:**
 
 ```
 https://github.com/SB2318/UltimateHealth.git
-
-cd  UltimateHealth
+```
+**Change the directory**
 
 ```
-
+cd  UltimateHealth
+```
 
 **Checkout the develop branch and select your preferences (backend or frontend)**.
 
 ```
  git checkout develop
 ```
+### If u couldn't find the 'develop' branch in your own forked repository , Please go to [CONTRIBUTING.md](./CONTRIBUTING.md) and follow the instructions written in detail.
 
 ## For Frontend:
 
@@ -174,3 +258,12 @@ Remember, following these guidelines will help ensure a smooth and efficient con
 ## Contact:
      
 Discord Server (Susmita Bhattacharya, user_name: susmita_)
+
+<h2 align = "center">Our Contributors ❤️</h2>
+<div align = "center">
+ <h3>Thank you for contributing to our repository</h3>
+
+![Contributors](https://contrib.rocks/image?repo=SB2318/UltimateHealth)
+
+
+</div>
